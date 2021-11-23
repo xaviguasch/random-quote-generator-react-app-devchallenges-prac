@@ -8,7 +8,11 @@ const Author = ({ authorQ, tagsQ, getQuotesByAuthor }) => {
     renderedTags = tagsQ.map((tag) => {
       const newTag = tag.split('-').join(' ')
 
-      return <p key={tag}>{newTag}</p>
+      return (
+        <p key={tag} className='genre-tag'>
+          {newTag}
+        </p>
+      )
     })
   }
 
@@ -19,7 +23,7 @@ const Author = ({ authorQ, tagsQ, getQuotesByAuthor }) => {
   return (
     <div className='Author'>
       <button onClick={handleAuthorClick}>
-        <p>{authorQ}</p>
+        <p className='author-text'>{authorQ}</p>
         {renderedTags}
       </button>
     </div>

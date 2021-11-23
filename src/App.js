@@ -37,7 +37,6 @@ function App() {
       <RandomGenerator getNewRandomQuote={getNewRandomQuote} />
       {!displayAuthorQuotes && (
         <div className='main-content'>
-          <h1>Random Quote Generator</h1>
           <Quote quoteContent={quote.content} />
           <Author
             authorQ={quote.author}
@@ -49,7 +48,7 @@ function App() {
 
       {displayAuthorQuotes && (
         <div className='author-quotes-content'>
-          <AuthorQuotesList authorQuotes={authorQuotes} />
+          <AuthorQuotesList authorQuotes={authorQuotes} author={quote.author} />
         </div>
       )}
     </div>

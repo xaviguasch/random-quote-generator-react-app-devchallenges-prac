@@ -4,10 +4,21 @@ import Quote from './Quote'
 
 import './AuthorQuotesList.css'
 
-const AuthorQuotesList = ({ authorQuotes }) => {
-  let renderedQuotes = ''
+const AuthorQuotesList = ({ authorQuotes, author }) => {
+  console.log(authorQuotes)
 
-  if (authorQuotes) {
+  let renderedQuotes = 'testing'
+
+  // We are checking if the object is empty (it'll be empty the moments while the API call is in progress)
+  function isEmpty(obj) {
+    for (var prop in obj) {
+      if (obj.hasOwnProperty(prop)) return false
+    }
+
+    return true
+  }
+
+  if (!isEmpty(authorQuotes)) {
     renderedQuotes = authorQuotes.results.map((q) => (
       <Quote key={q._id} quoteContent={q.content} />
     ))
@@ -15,7 +26,7 @@ const AuthorQuotesList = ({ authorQuotes }) => {
 
   return (
     <div>
-      <h2>Author quotes list component</h2>
+      <h2>{author}</h2>
       {renderedQuotes}
     </div>
   )
