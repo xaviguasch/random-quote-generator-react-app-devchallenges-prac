@@ -8,7 +8,7 @@ import AuthorQuotesList from './components/AuthorQuotesList'
 import './App.css'
 
 function App() {
-  const [randomQuote, setRandomQuote] = useState({})
+  const [quote, setRandomQuote] = useState({})
   const [authorQuotes, setAuthorQuotes] = useState({})
   const [displayAuthorQuotes, setDisplayAuthorQuotes] = useState(false)
 
@@ -38,10 +38,10 @@ function App() {
       {!displayAuthorQuotes && (
         <div className='main-content'>
           <h1>Random Quote Generator</h1>
-          <Quote randomQ={randomQuote.content} />
+          <Quote quoteContent={quote.content} />
           <Author
-            authorQ={randomQuote.author}
-            tagsQ={randomQuote.tags}
+            authorQ={quote.author}
+            tagsQ={quote.tags}
             getQuotesByAuthor={getQuotesByAuthor}
           />
         </div>
