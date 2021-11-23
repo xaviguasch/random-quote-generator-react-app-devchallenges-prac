@@ -1,10 +1,7 @@
 import React from 'react'
 
-const Author = ({ authorQ, tagsQ }) => {
+const Author = ({ authorQ, tagsQ, getQuotesByAuthor }) => {
   let renderedTags = ''
-
-  console.log(authorQ)
-  console.log(tagsQ)
 
   // To avoid "tagsQ" starting the mapping before it gets the content, we have to wait until it's populated with data
   if (tagsQ) {
@@ -15,10 +12,16 @@ const Author = ({ authorQ, tagsQ }) => {
     })
   }
 
+  const handleAuthorClick = () => {
+    getQuotesByAuthor(authorQ)
+  }
+
   return (
     <div className='Author'>
-      <p>{authorQ}</p>
-      {renderedTags}
+      <button onClick={handleAuthorClick}>
+        <p>{authorQ}</p>
+        {renderedTags}
+      </button>
     </div>
   )
 }
