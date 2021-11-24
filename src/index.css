@@ -73,6 +73,12 @@ body {
   font-weight: var(--fw-medium);
   line-height: 1.2;
   text-align: left;
+
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
 }
 
 img {
@@ -103,9 +109,8 @@ ul {
 
 .footer--signature {
   font-family: var(--ff-secondary);
-  font-size: var(--fs-14);
+  font-size: var(--fs-12);
   color: var(--clr-gray-2-text);
-  text-align: center;
 }
 
 /* ================== */
@@ -117,20 +122,9 @@ ul {
 
   font-family: var(--ff-main);
   background: transparent;
-}
+  text-align: left;
 
-.btn--author:hover,
-.btn--author:focus {
-  background: var(--clr-black);
-}
-
-.btn--author:hover .author-text,
-.btn--author:focus .author-text {
-  color: var(--clr-white-text);
-}
-.btn--author:hover .genre-tag,
-.btn--author:focus .genre-tag {
-  color: var(--clr-gray-2-text);
+  border: transparent;
 }
 
 /* ================== */
@@ -138,7 +132,7 @@ ul {
 /* ================== */
 
 .container {
-  margin: 2em 1em;
+  padding: 2em 1em;
 }
 
 .bold {

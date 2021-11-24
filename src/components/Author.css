@@ -1,0 +1,33 @@
+.Author {
+  margin-top: 4em;
+
+  padding-left: 1.5em;
+}
+
+.btn.btn--author {
+  width: 100%;
+  padding: 2em 1em;
+
+  position: relative;
+}
+
+.btn.btn--author:hover,
+.btn.btn--author:focus {
+  background: var(--clr-black);
+}
+
+.btn.btn--author:hover .author-text,
+.btn.btn--author:focus .author-text {
+  color: var(--clr-white-text);
+}
+.btn.btn--author:hover .genre-tag,
+.btn.btn--author:focus .genre-tag {
+  color: var(--clr-gray-2-text);
+}
+
+.icon--arrow {
+  position: absolute;
+  top: 35%;
+  right: 0.5em;
+  color: var(--clr-white);
+}

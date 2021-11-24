@@ -5,7 +5,7 @@ import './Quote.css'
 const Quote = ({ quoteContent }) => {
   return (
     <div className='Quote'>
-      {quoteContent && <p className='quote-text'>{quoteContent}</p>}
+      {quoteContent && <p className='quote-text'>"{quoteContent}"</p>}
     </div>
   )
 }

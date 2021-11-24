@@ -35,6 +35,7 @@ function App() {
   return (
     <div className='App container'>
       <RandomGenerator getNewRandomQuote={getNewRandomQuote} />
+
       {!displayAuthorQuotes && (
         <div className='main-content'>
           <Quote quoteContent={quote.content} />

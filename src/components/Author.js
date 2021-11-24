@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './Author.css'
+
 const Author = ({ authorQ, tagsQ, getQuotesByAuthor }) => {
   let renderedTags = ''
 
@@ -25,6 +27,7 @@ const Author = ({ authorQ, tagsQ, getQuotesByAuthor }) => {
       <button className='btn btn--author' onClick={handleAuthorClick}>
         <p className='author-text'>{authorQ}</p>
         {renderedTags}
+        <span class='material-icons-round icon--arrow'>arrow_right_alt</span>
       </button>
     </div>
   )

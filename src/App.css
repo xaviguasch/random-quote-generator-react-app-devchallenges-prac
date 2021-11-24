@@ -1,0 +1,19 @@
+.App {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-content {
+  /* margin-top: auto; */
+}
+
+.footer {
+  /* margin-top: auto; */
+}
+
+.footer--signature {
+  text-align: center;
+}

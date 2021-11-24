@@ -1,0 +1,25 @@
+.RandomGenerator {
+  margin-left: auto;
+}
+
+.btn.btn--random {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75em;
+
+  padding: 0.75em 1em;
+}
+
+.btn.btn--random:hover,
+.btn.btn--random:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.btn.btn--random:active {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px;
+}
+
+.icon--renew {
+  font-size: var(--fs-16);
+}
