@@ -107,6 +107,11 @@ ul {
   font-size: var(--fs-14);
 }
 
+.author-quotes-text {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-bold);
+}
+
 .footer--signature {
   font-family: var(--ff-secondary);
   font-size: var(--fs-12);
@@ -132,7 +137,7 @@ ul {
 /* ================== */
 
 .container {
-  padding: 2em 1em;
+  padding: 2em 1em 0;
 }
 
 .bold {

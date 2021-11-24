@@ -7,11 +7,13 @@
 }
 
 .main-content {
-  /* margin-top: auto; */
+}
+
+.author-quotes-content {
 }
 
 .footer {
-  /* margin-top: auto; */
+  padding-bottom: 0.5em;
 }
 
 .footer--signature {

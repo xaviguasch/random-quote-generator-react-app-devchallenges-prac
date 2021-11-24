@@ -25,8 +25,8 @@ const AuthorQuotesList = ({ authorQuotes, author }) => {
   }
 
   return (
-    <div>
-      <h2>{author}</h2>
+    <div className='AuthorQuotesList'>
+      <h2 className='author-quotes-text'>{author}</h2>
       {renderedQuotes}
     </div>
   )

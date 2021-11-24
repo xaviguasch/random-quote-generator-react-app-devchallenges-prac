@@ -1,0 +1,9 @@
+.AuthorQuotesList {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+
+  margin-bottom: 2em;
+
+  min-height: 80vh;
+}
