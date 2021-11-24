@@ -62,6 +62,7 @@
   --clr-blue: hsla(214, 84%, 56%, 1);
   --clr-red: hsla(0, 79%, 63%, 1);
   --clr-yellow: hsla(45, 86%, 77%, 1);
+  --clr-black: hsl(0, 0%, 20%);
 }
 
 body {
@@ -100,6 +101,13 @@ ul {
   font-size: var(--fs-14);
 }
 
+.footer--signature {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-14);
+  color: var(--clr-gray-2-text);
+  text-align: center;
+}
+
 /* ================== */
 /* Buttons & inputs */
 /* ================== */
@@ -108,65 +116,38 @@ ul {
   cursor: pointer;
 
   font-family: var(--ff-main);
-  font-size: var(--fs-14);
-  font-weight: var(--fw-semi-bold);
-}
-
-.btn.btn--ts {
-  padding-bottom: 0.875em;
   background: transparent;
-  border: none;
 }
 
-.btn.btn--ts.accent {
-  border-bottom: 2px solid var(--clr-blue);
+.btn--author:hover,
+.btn--author:focus {
+  background: var(--clr-black);
 }
 
-.btn.btn--add-todo,
-.btn.btn--delete {
-  color: var(--clr-white);
-  height: 100%;
-  padding: 0 2em;
-  border-radius: 0.5em;
+.btn--author:hover .author-text,
+.btn--author:focus .author-text {
+  color: var(--clr-white-text);
 }
-
-.btn.btn--add-todo {
-  background: var(--clr-blue);
-  border: 1px solid var(--clr-blue);
-}
-
-.btn.btn--delete {
-  font-size: var(--fs-12);
-  padding: 0.75em 2em;
-
-  background: var(--clr-red);
-  border: 1px solid var(--clr-red);
-
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-input[type='checkbox'] {
-  transform: scale(1.5);
-  cursor: pointer;
+.btn--author:hover .genre-tag,
+.btn--author:focus .genre-tag {
+  color: var(--clr-gray-2-text);
 }
 
 /* ================== */
 /* Utility styles */
 /* ================== */
 
+.container {
+  margin: 2em 1em;
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
 /* ================== */
 /* MEDIA QUERIES */
 /* ================== */
 
 @media (min-width: 450px) {
-  .App {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .todo-item {
-    font-size: var(--fs-18);
-  }
 }

@@ -7,7 +7,7 @@ import './AuthorQuotesList.css'
 const AuthorQuotesList = ({ authorQuotes, author }) => {
   console.log(authorQuotes)
 
-  let renderedQuotes = 'testing'
+  let renderedQuotes = ''
 
   // We are checking if the object is empty (it'll be empty the moments while the API call is in progress)
   function isEmpty(obj) {

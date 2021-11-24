@@ -22,7 +22,7 @@ const Author = ({ authorQ, tagsQ, getQuotesByAuthor }) => {
 
   return (
     <div className='Author'>
-      <button onClick={handleAuthorClick}>
+      <button className='btn btn--author' onClick={handleAuthorClick}>
         <p className='author-text'>{authorQ}</p>
         {renderedTags}
       </button>

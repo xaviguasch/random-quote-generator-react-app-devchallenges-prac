@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div className='App'>
+    <div className='App container'>
       <RandomGenerator getNewRandomQuote={getNewRandomQuote} />
       {!displayAuthorQuotes && (
         <div className='main-content'>
@@ -51,6 +51,12 @@ function App() {
           <AuthorQuotesList authorQuotes={authorQuotes} author={quote.author} />
         </div>
       )}
+
+      <div className='footer'>
+        <p className='footer--signature'>
+          created by <span className='bold'>Xavi Guasch</span> - devChallenges.io
+        </p>
+      </div>
     </div>
   )
 }

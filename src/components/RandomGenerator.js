@@ -8,7 +8,9 @@ const RandomGenerator = ({ getNewRandomQuote }) => {
   }
   return (
     <div className='Random'>
-      <button onClick={handleBtnClick}>Random</button>
+      <button className='btn' onClick={handleBtnClick}>
+        Random <span class='material-icons-round'>autorenew</span>
+      </button>
     </div>
   )
 }
